@@ -16,10 +16,6 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'war'
 
-//jar {
-//    baseName = 'tsapp'
-//    version =  '0.1'
-//}
 
 repositories {
     mavenCentral()
@@ -31,6 +27,7 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.thymeleaf:thymeleaf-spring4")
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
